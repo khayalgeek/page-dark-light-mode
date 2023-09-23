@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Mooli&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mooli', sans-serif;
+}
+
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.left-container,
+.right-container {
+    height: 100%;
+    padding: 0px 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-container{
+    width: 30%;
+}
+
+.right-container{
+    width:70%;
+    justify-content: space-around;
+}
+.left-container img {
+    transform: scale(1.2);
+}
+
+.left-container>img:last-child {
+    margin-left: 35px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.right-container nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+
+.right-container nav ul li {
+    margin-right: 30px;
+    cursor: pointer;
+    transform: 300ms all linear;
+}
+
+.right-container nav ul li:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.button-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 2.5px;
+    width: 50px;
+    height: 25px;
+    border-radius:15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.button{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 300ms all linear;
+    cursor: pointer;
+}
+
+.button.active{
+    transform: translateX(23px);
+    background-color: #ffffff;
+    
+}
+.button-box.active{
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+}
